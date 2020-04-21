@@ -81,7 +81,9 @@ Once the image reload is done, you could change the yaml config back to
 imagePullPolicy: IfNotPresent
 ```
 
-In case of anything wrong, you could restart the image
+In case of anything wrong, you could access the pod or restart the image
 ```
+kubectl exec -it <pod_name> -- /bin/bash
+
 kubectl -n <network> rollout restart deployment <project_name>
 ```
