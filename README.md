@@ -87,3 +87,10 @@ kubectl exec -it <pod_name> -- /bin/bash
 
 kubectl -n <network> rollout restart deployment <project_name>
 ```
+
+### Web UI
+You could use minikube build in dashboard to monitor all resources of the cluster
+```
+kubectl proxy
+```
+Access the web ui on http://127.0.0.1:8001
