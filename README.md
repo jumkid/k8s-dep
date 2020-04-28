@@ -90,6 +90,11 @@ kubectl -n <network> rollout restart deployment <project_name>
 
 ### Web UI
 You could use minikube build in dashboard to monitor all resources of the cluster
+First, deploy the dashboard with the latest version matches your minikube
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
+```
+Then you could start a proxy
 ```
 kubectl proxy
 ```
