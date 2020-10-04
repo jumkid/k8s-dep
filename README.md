@@ -49,10 +49,16 @@ spec:
 
 
 ## 5. Start minikube
-Start the minikube with custom config
+If it is the first time you run minikube, you could start the minikube with custom config
 ```
-minikube start --cpus 2 --memory 4096
+minikube start --driver hyperv --cpus 4 --memory 6144 --kubernetes-version <k8s_version>
 ```
+Wait for a while as it may take some time, then you should see the cluster is up and running. Next time when you start minikube, you could simple do
+```
+minikube start
+```
+with the existing cluster.
+
 Check the pods and deployment, see if the old image is running
 ```
 kubectl get pods

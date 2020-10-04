@@ -7,9 +7,14 @@ metadata:
     app: ory-hydra
 spec:
   ports:
-  - port: 4445
+  - name: admin
+    port: 4445
+  - name: public
+    port: 4444
+  - name: token-user
+    port: 5555
   selector:
-    app: ory-hydra
+    app: ory-hydra  
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -60,4 +65,4 @@ spec:
         - containerPort: 5555
           name: token-user
           protocol: TCP
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
