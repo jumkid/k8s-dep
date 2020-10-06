@@ -12,7 +12,7 @@ docker image ls -a
 ```
 
 ### New version
-After commit the change, you could tag the new version. Say the old version number is 1.0.0, then the new version could be 1.0.1. Then create the docker image by
+After commit the change, you could tag the new version. Go to the project home path where contains a Dockerfile. And let's say, there is an old version 1.0.0, then the new version could be 1.0.1. You could create the docker image by the following command. 
 ```
 docker build -t jumkid/<project_name>:<new_tag> . --build-arg <param_name>=<param_value>
 ```
