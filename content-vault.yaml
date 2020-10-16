@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: content-vault
-        image: docker.io/jumkid/content-vault:1.0.0
+        image: docker.io/jumkid/content-vault:latest
         resources:
           limits:
             cpu: 1000m

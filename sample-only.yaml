@@ -1,0 +1,40 @@
+# Notice: this yaml file is used for sample only to demonstrate the syntax and format
+#
+#
+shortname: &shortname chooli
+
+description: > 
+  this is a sample yaml file to demonstrate all the form of syntax 
+  which yaml supports.
+
+signature: |
+  chooli yip
+    created this from a sample         
+      on youtube - https://www.youtube.com/watch?v=cdLNKUoMc6c
+
+Primitives: &Primitives
+  title: "this is a sample"
+  name: *shortname
+  intNum: 123
+  floatNum: 1.234
+  exponentialNum: 1e+10
+  isDemo: true
+  createdDate: 2020-10-06 10:00:00
+  noValue: null
+
+anyotherPrimitives:
+  <<: *Primitives
+  memo: the above fields are copied from the anchor
+
+Arrays:
+  - laptop
+  - car
+  - coffee
+favFoods: ['BBQ duck', 'steak', 'peach']
+
+MyCars:
+  - made: "highlander"
+    brand: "toyota"
+    year: 2015
+  - {made: "RDX", brand: "acura", year: 2008}
+
