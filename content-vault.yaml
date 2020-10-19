@@ -33,12 +33,14 @@ spec:
         image: docker.io/jumkid/content-vault:1.0.1
         resources:
           limits:
-            cpu: 1000m
+            cpu: 1
           requests:
-            cpu: 100m
+            cpu: 0.5
         env:
-        - name: ELASTICSEARCH_HOSTS 
-          value: http://elasticsearch:9200
+        - name: ELASTICSEARCH_HOST
+          value: content-vault-es-http
+        - name: ELASTICSEARCH_PORT
+          value: "9200"
         ports:
         - containerPort: 8080
         imagePullPolicy: Always 
