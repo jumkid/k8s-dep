@@ -21,8 +21,8 @@ spec:
             value: -Xms128m -Xmx1g
           resources:
             requests:
-              memory: 0.5Gi
-              cpu: 0.25
+              memory: 1Gi
+              cpu: 0.5
             limits:
-              memory: 1.5Gi
+              memory: 2Gi
               cpu: 1
