@@ -19,10 +19,3 @@ spec:
           env:
           - name: ES_JAVA_OPTS
             value: -Xms128m -Xmx1g
-          resources:
-            requests:
-              memory: 1Gi
-              cpu: 0.5
-            limits:
-              memory: 2Gi
-              cpu: 1
