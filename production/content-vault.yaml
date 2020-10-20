@@ -31,11 +31,6 @@ spec:
       containers:
       - name: content-vault
         image: docker.io/jumkid/content-vault:1.0.1
-        resources:
-          limits:
-            cpu: 1
-          requests:
-            cpu: 0.25
         env:
         - name: ELASTICSEARCH_HOST
           value: content-vault-es-http
