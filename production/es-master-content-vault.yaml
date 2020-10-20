@@ -15,7 +15,7 @@ spec:
     podTemplate:
       spec:
         containers:
-        - name: content-vault
+        - name: elasticsearch
           env:
           - name: ES_JAVA_OPTS
             value: -Xms128m -Xmx1g
