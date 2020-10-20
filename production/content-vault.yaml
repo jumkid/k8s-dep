@@ -37,9 +37,9 @@ spec:
         - name: ELASTICSEARCH_PORT
           value: "9200"
         - name: ELASTICSEARCH_USERNAME
-          value: "elastic"
-        - name: ELASTICSEARCH_password
-          value: "nUpcl46dWf6895qf8xaP00j7"  
+          value: elastic
+        - name: ELASTICSEARCH_PASSWORD
+          value: nUpcl46dWf6895qf8xaP00j7
         ports:
         - containerPort: 8080
         imagePullPolicy: Always 
