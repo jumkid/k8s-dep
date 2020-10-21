@@ -40,6 +40,10 @@ spec:
           value: elastic
         - name: ELASTICSEARCH_PASSWORD
           value: nUpcl46dWf6895qf8xaP00j7
+        - name: ELASTICSEARCH_KEYSTORE_PATH
+          value: keystore/truststore.p12
+        - name: ELASTICSEARCH_KEYSTORE_PASSWORD
+          value: bigdata
         ports:
         - containerPort: 8080
         imagePullPolicy: Always 
