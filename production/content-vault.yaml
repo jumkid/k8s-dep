@@ -6,6 +6,10 @@ metadata:
   labels:
     app: content-vault
 spec:
+  http:
+      service:
+        spec:
+          type: LoadBalancer
   ports:
   - port: 8080
   selector:
@@ -46,11 +50,11 @@ spec:
           value: bigdata
         ports:
         - containerPort: 8080
-        imagePullPolicy: Always 
+        imagePullPolicy: Always
         volumeMounts:
         - name: content-vault-persistent-storage
           mountPath: "/opt/content-vault/data"
       volumes:
       - name: content-vault-persistent-storage
         persistentVolumeClaim:
-          claimName: content-vault-pv-claim  
+          claimName: content-vault-pv-claim

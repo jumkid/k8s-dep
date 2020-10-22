@@ -4,6 +4,10 @@ metadata:
   name: content-vault
 spec:
   version: 7.9.2
+  http:
+    tls:
+      selfSignedCertificate:
+        disabled: true
   nodeSets:
   - name: default
     count: 1
