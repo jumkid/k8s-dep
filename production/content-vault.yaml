@@ -37,7 +37,7 @@ spec:
         - name: ELASTICSEARCH_USERNAME
           value: elastic
         - name: ELASTICSEARCH_PASSWORD
-          value: nUpcl46dWf6895qf8xaP00j7
+          value: g6n0Ed522SJ298a7UOf3npAM
         - name: ELASTICSEARCH_KEYSTORE_PATH
           value: keystore/truststore.p12
         - name: ELASTICSEARCH_KEYSTORE_PASSWORD
