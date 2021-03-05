@@ -45,7 +45,7 @@ spec:
         - name: KAFKA_CREATE_TOPICS
           value: admintome-test:1:1
         - name: KAFKA_ADVERTISED_LISTENERS
-          value: "INSIDE://:9092,OUTSIDE://kf-cluster:30322"
+          value: "INSIDE://localhost:9092,OUTSIDE://kf-broker:30322"
         - name: KAFKA_LISTENERS
           value: "INSIDE://:9092,OUTSIDE://:30322"
         - name: KAFKA_LISTENER_SECURITY_PROTOCOL_MAP
